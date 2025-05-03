@@ -3,6 +3,7 @@ import { Rect} from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './auth/Authcontext'
 import Dashboard from './component/Dashboard'
+import Login from './pages/Login'
 import './App.css'
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <AuthProvider>
         <Router>
           <Routes>
-            {/* <Route path="/" element={<Login />} /> */}
+            <Route path="/" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
             {/* <Route path="/register" element={<Register />} /> */}
             {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
